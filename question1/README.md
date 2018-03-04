@@ -10,4 +10,14 @@ Provide and print out 3 examples to show that your function is working as intend
 
 Compile Steps: 
 
+	gcc q1.c
+
 Output:
+	
+	Max: 17
+	Min: 1
+	Max: 94
+	Min: 10
+	Max: 9
+	Min: 2
+
