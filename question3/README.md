@@ -10,58 +10,58 @@ Compile Steps:
 
 Output:
 
-./a.exe < test1.txt
-Input:
-Hello there!
-123456789
-This is a test.
-Do I work?
-987654321
-Hopefully! :D
-
-Output:
-123456789
-987654321
-Do I work?
-Hello there!
-Hopefully! :D
-This is a test.
-
-
-./a.exe < test1.txt -n
-Input:
-Hello there!
-123456789
-This is a test.
-Do I work?
-987654321
-Hopefully! :D
-
-Output:
-This is a test.
-Do I work?
-Hopefully! :D
-Hello there!
-123456789
-987654321
-
-
-./a.exe < test1.txt -r
-Input:
-Hello there!
-123456789
-This is a test.
-Do I work?
-987654321
-Hopefully! :D
-
-Output:
-This is a test.
-Hopefully! :D
-Hello there!
-Do I work?
-987654321
-123456789
-
-
-./a.exe < test2.txt -f
+    ./a.exe < test1.txt
+    Input:
+    Hello there!
+    123456789
+    This is a test.
+    Do I work?
+    987654321
+    Hopefully! :D
+    
+    Output:
+    123456789
+    987654321
+    Do I work?
+    Hello there!
+    Hopefully! :D
+    This is a test.
+    
+    
+    ./a.exe < test1.txt -n
+    Input:
+    Hello there!
+    123456789
+    This is a test.
+    Do I work?
+    987654321
+    Hopefully! :D
+    
+    Output:
+    This is a test.
+    Do I work?
+    Hopefully! :D
+    Hello there!
+    123456789
+    987654321
+    
+    
+    ./a.exe < test1.txt -r
+    Input:
+    Hello there!
+    123456789
+    This is a test.
+    Do I work?
+    987654321
+    Hopefully! :D
+    
+    Output:
+    This is a test.
+    Hopefully! :D
+    Hello there!
+    Do I work?
+    987654321
+    123456789
+    
+    
+    ./a.exe < test2.txt -f
