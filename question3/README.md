@@ -65,3 +65,18 @@ Output:
     
     
     ./a.exe < test2.txt -f
+    Input:
+    hello there!
+    123456789
+    This is a test.
+    Do I work?
+    987654321
+    Hopefully! :D
+        
+    Output:
+    123456789
+    987654321
+    Do I work?
+    hello there!
+    Hopefully! :D
+    This is a test.

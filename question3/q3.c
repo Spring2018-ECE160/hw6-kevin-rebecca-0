@@ -11,6 +11,7 @@ static char *allocp = allocbuf;
 
 int mygetline(char *, int);
 int numcmp(char *s1, char *s2);
+int strcmp_f(char *, char *);
 int readlines(char *lineptr[], int nlines);
 char *alloc(int);
 void writelines(char *lineptr[], int nlines);
@@ -42,7 +43,7 @@ int main(int argc, char *argv[])
 		printf("Input:\n");
 		writelines(lineptr, nlines);
         qsort((void **) lineptr, 0, nlines-1,
-          (int (*)(void*, void*))(numeric ? numcmp : strcmp));
+          (int (*)(void*, void*))(numeric ? numcmp : (fold ? strcmp_f : strcmp)));
 		if(reverse == 1) 
         {
 			for(int i = 0, j = nlines - 1; i < nlines/2 && j > 0; i++, j--) 
@@ -164,3 +165,14 @@ int numcmp(char *s1, char *s2)
     else
         return 0;
 }
+
+int strcmp_f(char *s, char *t)
+{
+    for ( ; toupper(*s) == toupper(*t); s++, t++)
+        if (*s == '\0')
+            return 0;
+
+    return toupper(*s) - toupper(*t);
+}
+
+
